@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/sheet"
+    android:background="#25475C"
+    >
+
+    <TextView
+        android:id="@+id/idCourseName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="40dp"
+        android:text="Course Name"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/idCourseimage"
+        android:layout_width="188dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/idCourseName"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="4dp"
+        android:padding="4dp"
+        android:src="@mipmap/ic_launcher_round" />
+
+
+    <TextView
+        android:id="@+id/idcourceprice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idCourseName"
+        android:layout_margin="4dp"
+        android:layout_toRightOf="@id/idCourseimage"
+        android:padding="3dp"
+        android:text="Price"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/idCoursesuite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idcourceprice"
+        android:layout_margin="4dp"
+        android:layout_marginBottom="4dp"
+        android:textSize="18sp"
+
+        android:layout_toRightOf="@id/idCourseimage"
+        android:padding="3dp"
+        android:text="Suite For"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/idCoursedescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idCoursesuite"
+        android:layout_margin="4dp"
+        android:layout_toRightOf="@id/idCourseimage"
+        android:padding="3dp"
+        android:text="Description"
+        android:textColor="@color/white"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_below="@id/idCoursedescription"
+        >
+        <Button
+            android:layout_width="8dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="4dp"
+            android:text="Edit Course"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:id="@+id/btnedit"
+            />
+        <Button
+            android:layout_width="8dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="4dp"
+            android:text="View Details"
+
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:id="@+id/btndetails"
+            />
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>
